@@ -2,7 +2,7 @@
 export default function Home() {
   return (
     <div>
-      <h1>Breck Golf Trip</h1>
+      <p className="text-center text-2xl">More info coming soon...</p>
     </div>
   );
 }
