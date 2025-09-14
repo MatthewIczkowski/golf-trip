@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import logo from '../../../public/2025-walker-cup-300x300.png'
+import logo from '../../../public/breck-cup-logo.png'
 
 const Navbar = () => {
   const pathname = usePathname()
