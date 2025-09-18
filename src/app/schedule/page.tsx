@@ -44,53 +44,16 @@ export default function Schedule() {
                     <li>• 1:00 PM - Check-in & Warm-up</li>
                     <li>• 2:00 PM - 1st Tee time</li>
                     <li>• 2:10 PM - 2nd Tee time</li>
-                    <li>• 2:20 PM - 3rd Tee time</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Day 2 - Breckenridge Golf Club */}
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6">
-              <h2 className="text-2xl font-bold mb-1">Day 2</h2>
-              <h3 className="text-xl font-semibold">Breckenridge Golf Club</h3>
-              <p className="text-blue-100 text-sm mt-1">Friday, October 3rd</p>
-            </div>
-            
-            <div className="p-6">
-              <div className="bg-gray-200 rounded-lg h-48 flex items-center justify-center mb-4">
-                <Image src={breckenridge} alt="Breckenridge Golf Club" width={400} height={300} className="w-full h-full object-cover rounded-lg" />
-              </div>
-              
-              <div className="space-y-4">
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Course Details</h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    The crown jewel of our tournament, Breckenridge Golf Club features 
-                    three distinct nine-hole courses. With breathtaking mountain views 
-                    and championship-level conditions, this is where legends are made.
-                  </p>
-                </div>
-                
-                <div className="bg-blue-50 p-3 rounded-lg">
-                  <h5 className="font-semibold text-blue-800 mb-2 text-sm">Schedule</h5>
-                  <ul className="text-blue-700 space-y-1 text-sm">
-                    <li>• 9:30 AM - Check-in & Warm-up</li>
-                    <li>• 10:20 AM - 1st Tee time</li>
-                    <li>• 10:35 AM - 2nd Tee time</li>
-                    <li>• 10:50 AM - 3rd Tee time</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Day 3 - Keystone Ranch */}
+          {/* Day 2 - Keystone Ranch */}
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="bg-gradient-to-r from-purple-600 to-purple-700 text-white p-6">
-              <h2 className="text-2xl font-bold mb-1">Day 3</h2>
+              <h2 className="text-2xl font-bold mb-1">Day 2</h2>
               <h3 className="text-xl font-semibold">Keystone Ranch Golf Course</h3>
               <p className="text-purple-100 text-sm mt-1">Saturday, October 4th</p>
             </div>
@@ -118,9 +81,46 @@ export default function Schedule() {
                   <h5 className="font-semibold text-purple-800 mb-2 text-sm">Schedule</h5>
                   <ul className="text-purple-700 space-y-1 text-sm">
                     <li>• 10:30 AM - Check-in & Warm-up</li>
-                    <li>• 11:20 AM - 1st Tee time</li>
-                    <li>• 11:35 AM - 2nd Tee time</li>
+                    <li>• 11:23 AM - 1st Tee time</li>
+                    <li>• 11:32 AM - 2nd Tee time</li>
                     <li>• 11:50 AM - 3rd Tee time</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+        {/* Day 3 - Breckenridge Golf Club */}
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6">
+              <h2 className="text-2xl font-bold mb-1">Day 3</h2>
+              <h3 className="text-xl font-semibold">Breckenridge Golf Club</h3>
+              <p className="text-blue-100 text-sm mt-1">Friday, October 3rd</p>
+            </div>
+            
+            <div className="p-6">
+              <div className="bg-gray-200 rounded-lg h-48 flex items-center justify-center mb-4">
+                <Image src={breckenridge} alt="Breckenridge Golf Club" width={400} height={300} className="w-full h-full object-cover rounded-lg" />
+              </div>
+              
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">Course Details</h4>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    The crown jewel of our tournament, Breckenridge Golf Club features 
+                    three distinct nine-hole courses. With breathtaking mountain views 
+                    and championship-level conditions, this is where legends are made.
+                  </p>
+                </div>
+                
+                <div className="bg-blue-50 p-3 rounded-lg">
+                  <h5 className="font-semibold text-blue-800 mb-2 text-sm">Schedule</h5>
+                  <ul className="text-blue-700 space-y-1 text-sm">
+                    <li>• 9:30 AM - Check-in & Warm-up</li>
+                    <li>• 10:00 AM - 1st Tee time</li>
+                    <li>• 10:10 AM - 2nd Tee time</li>
+                    <li>• 10:20 AM - 3rd Tee time</li>
                   </ul>
                 </div>
               </div>
