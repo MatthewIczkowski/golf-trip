@@ -10,7 +10,6 @@ interface Golfer {
   handicap: number;
   team: string;
   city: string;
-  phone: string;
   description: string;
 }
 
