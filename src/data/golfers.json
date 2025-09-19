@@ -7,7 +7,6 @@
       "handicap": 20.4,
       "team": "A",
       "city": "Denver, CO",
-      "phone": "(303) 249-0196",
       "description": "A dedicated golfer with a passion for the game and continuous improvement."
     },
     {
@@ -17,7 +16,6 @@
       "handicap": 16.7,
       "team": "B",
       "city": "Denver, CO",
-      "phone": "",
       "description": "A seasoned golfer with over 15 years of experience. Known for his powerful drives and consistent putting. Blake brings competitive spirit and strategic thinking to every round."
     },
     {
@@ -27,17 +25,15 @@
       "handicap": 20,
       "team": "B",
       "city": "",
-      "phone": "",
       "description": "A dedicated golfer focused on improving their game and contributing to team success."
     },
     {
       "id": 4,
       "name": "Dave Haselman",
       "image": "",
-      "handicap": 17.5,
+      "handicap": 17.6,
       "team": "A",
       "city": "Denver, CO",
-      "phone": "",
       "description": "An experienced golfer with a strong understanding of course strategy and team dynamics."
     },
     {
@@ -47,7 +43,6 @@
       "handicap": 15.5,
       "team": "B",
       "city": "Denver, CO",
-      "phone": "",
       "description": "Passionate about the technical aspects of golf, Jack is always working on improving his swing mechanics. His attention to detail and course management skills make him a formidable opponent."
     },
     {
@@ -56,8 +51,7 @@
       "image": "",
       "handicap": 15.9,
       "team": "B",
-      "city": "",
-      "phone": "",
+      "city": "Dallas, TX",
       "description": "A skilled golfer with a solid all-around game and competitive drive."
     },
     {
@@ -67,7 +61,6 @@
       "handicap": 30,
       "team": "A",
       "city": "Denver, CO",
-      "phone": "",
       "description": "A natural talent with a smooth swing and excellent short game. Nick's calm demeanor under pressure and ability to read greens make him a consistent performer in tournament play."
     },
     {
@@ -77,7 +70,6 @@
       "handicap": 19,
       "team": "A",
       "city": "Denver, CO",
-      "phone": "",
       "description": "A consistent player with strong course management skills and competitive spirit."
     },
     {
@@ -87,47 +79,33 @@
       "handicap": 23,
       "team": "A",
       "city": "Denver, CO",
-      "phone": "",
       "description": "A dedicated golfer with a passion for the game and team camaraderie."
     },
     {
       "id": 10,
-      "name": "Player 10",
+      "name": "Nate Barrett",
       "image": "",
       "handicap": 18,
       "team": "B",
       "city": "",
-      "phone": "(317) 364-5459",
       "description": "A competitive golfer focused on team success and personal improvement."
     },
     {
       "id": 11,
-      "name": "Player 11",
-      "image": "",
-      "handicap": 99,
-      "team": "",
-      "city": "",
-      "phone": "(630) 392-0662",
-      "description": "A golfer ready to contribute to the team's success."
-    },
-    {
-      "id": 12,
-      "name": "Bobby",
+      "name": "Bobby Fridley",
       "image": "",
       "handicap": 6.9,
       "team": "A",
       "city": "",
-      "phone": "(812) 327-6028",
       "description": "A skilled golfer with a low handicap and strong competitive drive."
     },
     {
-      "id": 13,
+      "id": 12,
       "name": "Matt Iczkowski",
       "image": "/profiles/matt.jpeg",
       "handicap": 3.4,
       "team": "B",
       "city": "Denver, CO",
-      "phone": "(413) 386-8219",
       "description": "An excellent golfer with a very low handicap, known for precision and consistency."
     }
   ]
