@@ -13,7 +13,7 @@ export default function Schedule() {
           {/* Day 1 - Eagle Vail */}
           <div className="overflow-hidden bg-white">
             <div className="p-6">
-              <h2 className="text-2xl italic underline font-bold mb-1">Day 1 - Practice Round</h2>
+              <h2 className="text-2xl italic underline font-bold mb-1">Practice Round</h2>
               <h3 className="text-xl font-semibold">Eagle Vail Golf Club</h3>
               <p className="text-sm mt-1">Thursday, October 2nd</p>
             </div>
@@ -48,9 +48,9 @@ export default function Schedule() {
           {/* Day 2 - Keystone Ranch */}
           <div className="overflow-hidden bg-white">
             <div className="p-6">
-              <h2 className="text-2xl italic underline font-bold mb-1">Day 2</h2>
+              <h2 className="text-2xl italic underline font-bold mb-1">Day 1</h2>
               <h3 className="text-xl font-semibold">Keystone Ranch Golf Course</h3>
-              <p className="text-sm mt-1">Saturday, October 4th</p>
+              <p className="text-sm mt-1">Friday, October 3rd</p>
             </div>
             
             <div className="p-6">
@@ -85,9 +85,9 @@ export default function Schedule() {
         {/* Day 3 - Breckenridge Golf Club */}
         <div className="overflow-hidden bg-white">
             <div className="p-6">
-              <h2 className="text-2xl italic underline font-bold mb-1">Day 3</h2>
+              <h2 className="text-2xl italic underline font-bold mb-1">Day 2</h2>
               <h3 className="text-xl font-semibold">Breckenridge Golf Club</h3>
-              <p className="text-sm mt-1">Friday, October 3rd</p>
+              <p className="text-sm mt-1">Saturday, October 4th</p>
             </div>
             
             <div className="p-6">
