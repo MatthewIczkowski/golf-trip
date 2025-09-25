@@ -38,9 +38,9 @@ export default function Teams() {
               />
             </div>
             <div className="p-2 text-center flex-1 overflow-hidden flex flex-col">
-              <h3 className="text-sm font-semibold text-gray-800 truncate">{team[i].name}</h3>
+              <h3 className="text-sm font-semibold text-gray-900 truncate">{team[i].name}</h3>
               <p className="text-xs text-gray-600 flex items-center justify-center gap-1">
-                <span className="text-red-600 font-medium">HCP: {team[i].handicap}</span>
+                <span className="text-red-800 font-semibold">HCP: {team[i].handicap}</span>
                 <span className="text-gray-400">•</span>
                 <span className="truncate">{team[i].city}</span>
               </p>
@@ -60,9 +60,9 @@ export default function Teams() {
               </div>
             </div>
             <div className="p-2 text-center flex-1 overflow-hidden flex flex-col">
-              <h3 className="text-sm font-semibold text-gray-800 truncate">{team[i].name}</h3>
+              <h3 className="text-sm font-semibold text-gray-900 truncate">{team[i].name}</h3>
               <p className="text-xs text-gray-600 flex items-center justify-center gap-1">
-                <span className="text-blue-600 font-medium">HCP: {team[i].handicap}</span>
+                <span className="text-red-800 font-semibold">HCP: {team[i].handicap}</span>
                 <span className="text-gray-400">•</span>
                 <span className="truncate">{team[i].city}</span>
               </p>
