@@ -24,7 +24,7 @@ export default function Schedule() {
               </div>
               
               <div className="space-y-4">
-                <div>
+                <div className="md:h-40">
                   <h4 className="text-lg font-semibold mb-2">Course Details</h4>
                   <p className="text-sm leading-relaxed">
                     Eagle Vail Golf Club offers a challenging mountain course with stunning 
@@ -59,7 +59,7 @@ export default function Schedule() {
               </div>
               
               <div className="space-y-4">
-                <div>
+                <div className="md:h-40">
                   <h4 className="text-lg font-semibold mb-2">Course Details</h4>
                   <p className="text-sm leading-relaxed">
                     Keystone Ranch offers a unique mountain golf experience with dramatic 
@@ -96,7 +96,7 @@ export default function Schedule() {
               </div>
               
               <div className="space-y-4">
-                <div>
+                <div className="md: h-40">
                   <h4 className="text-lg font-semibold mb-2">Course Details</h4>
                   <p className="text-sm leading-relaxed">
                     The crown jewel of our tournament, Breckenridge Golf Club features 
