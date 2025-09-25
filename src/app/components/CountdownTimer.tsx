@@ -10,8 +10,12 @@ export default function CountdownTimer() {
     seconds: 0
   });
   const [isExpired, setIsExpired] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    // Mark as mounted to prevent hydration mismatch
+    setIsMounted(true);
+
     // Target date: October 2nd at 2:00pm (current year)
     const targetDate = new Date();
     targetDate.setMonth(9); // October (0-indexed)
@@ -43,6 +47,35 @@ export default function CountdownTimer() {
 
     return () => clearInterval(interval);
   }, []);
+
+  // Don't render anything until mounted to prevent hydration mismatch
+  if (!isMounted) {
+    return (
+      <div className="text-center">
+        <h2 className="text-lg md:text-xl font-bold mb-4 text-white">
+          Countdown to First Tee Shot!
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
+          <div className="bg-white/90 text-black p-2 md:p-3 rounded-lg">
+            <div className="text-2xl md:text-3xl font-bold">--</div>
+            <div className="text-xs md:text-sm">Days</div>
+          </div>
+          <div className="bg-white/90 text-black p-2 md:p-3 rounded-lg">
+            <div className="text-2xl md:text-3xl font-bold">--</div>
+            <div className="text-xs md:text-sm">Hours</div>
+          </div>
+          <div className="bg-white/90 text-black p-2 md:p-3 rounded-lg">
+            <div className="text-2xl md:text-3xl font-bold">--</div>
+            <div className="text-xs md:text-sm">Minutes</div>
+          </div>
+          <div className="bg-white/90 text-black p-2 md:p-3 rounded-lg">
+            <div className="text-2xl md:text-3xl font-bold">--</div>
+            <div className="text-xs md:text-sm">Seconds</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   // Don't render anything if the countdown has expired
   if (isExpired) {

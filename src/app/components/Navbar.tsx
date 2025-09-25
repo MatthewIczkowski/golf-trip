@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -7,6 +7,26 @@ import logo from '../../../public/breck-cup-logo.png'
 
 const Navbar = () => {
   const pathname = usePathname()
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  // Don't render pathname-dependent styles until mounted to prevent hydration mismatch
+  const getLinkClassName = (href: string) => {
+    const baseClasses = "text-md md:text-xl font-semibold hover:underline hover:underline-offset-8 hover:decoration-3"
+    
+    if (!isMounted) {
+      return `${baseClasses} text-gray-500 hover:text-black hover:decoration-gray-500`
+    }
+    
+    return `${baseClasses} ${
+      pathname === href 
+        ? 'text-black underline underline-offset-8 decoration-gray-500 decoration-3' 
+        : 'text-gray-500 hover:text-black hover:decoration-gray-500'
+    }`
+  }
 
   return (
     <nav>
@@ -14,31 +34,19 @@ const Navbar = () => {
             <Link href="/"><Image src={logo} alt="logo" width={75} height={75} /></Link>
             <Link 
               href="/schedule" 
-              className={`text-md md:text-xl font-semibold hover:underline hover:underline-offset-8 hover:decoration-3 ${
-                pathname === '/schedule' 
-                  ? 'text-black underline underline-offset-8 decoration-gray-500 decoration-3' 
-                  : 'text-gray-500 hover:text-black hover:decoration-gray-500'
-              }`}
+              className={getLinkClassName('/schedule')}
             >
               Schedule
             </Link>
             <Link 
               href="/teams" 
-              className={`text-md md:text-xl font-semibold hover:underline hover:underline-offset-8 hover:decoration-3 ${
-                pathname === '/teams' 
-                  ? 'text-black underline underline-offset-8 decoration-gray-500 decoration-3' 
-                  : 'text-gray-500 hover:text-black hover:decoration-gray-500'
-              }`}
+              className={getLinkClassName('/teams')}
             >
               Teams
             </Link>
             <Link 
               href="/matches" 
-              className={`text-md md:text-xl font-semibold hover:underline hover:underline-offset-8 hover:decoration-3 ${
-                pathname === '/matches' 
-                  ? 'text-black underline underline-offset-8 decoration-gray-500 decoration-3' 
-                  : 'text-gray-500 hover:text-black hover:decoration-gray-500'
-              }`}
+              className={getLinkClassName('/matches')}
             >
               Matches
             </Link>

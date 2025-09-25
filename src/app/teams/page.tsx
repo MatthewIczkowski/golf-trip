@@ -35,19 +35,6 @@ export default function Teams() {
                 alt={team[i].name}
                 fill
                 className="object-cover"
-                onError={(e) => {
-                  // Fallback to placeholder if image fails to load
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
-                  const parent = target.parentElement;
-                  if (parent) {
-                    parent.innerHTML = `
-                      <div class="w-full h-full flex items-center justify-center bg-gray-200 text-gray-500">
-                        <span class="text-sm">Image pending</span>
-                      </div>
-                    `;
-                  }
-                }}
               />
             </div>
             <div className="p-2 text-center flex-1 overflow-hidden flex flex-col">
