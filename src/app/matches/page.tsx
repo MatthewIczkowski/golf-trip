@@ -116,7 +116,7 @@ export default function Matches() {
           )}
           <div className="grid grid-cols-2 gap-4">
             {currentDayMatches.map((match) => (
-              <div key={match.id} className="col-span-2 grid grid-cols-3 rounded-lg border border-gray-200 bg-white shadow-sm">
+              <div key={match.id} className="col-span-2 grid grid-cols-3 rounded-lg border border-gray-400 bg-white shadow-sm">
                 {/* Team A Column */}
                 <div className="p-2 md:p-4">
                   <div className="flex flex-col gap-1">

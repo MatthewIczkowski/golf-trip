@@ -28,7 +28,7 @@ export default function Teams() {
     for (let i = 0; i < teamSize; i++) {
       if (team[i] && team[i].image && team[i].image.trim() !== '') {
         slots.push(
-          <div key={team[i].id} className="h-85 flex flex-col bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow border group">
+          <div key={team[i].id} className="h-85 flex flex-col bg-white rounded-lg overflow-hidden shadow-md border border-gray-400 group">
             <div className="relative w-full h-48">
               <Image
                 src={team[i].image}
@@ -40,7 +40,7 @@ export default function Teams() {
             <div className="p-2 text-center flex-1 overflow-hidden flex flex-col">
               <h3 className="text-sm font-semibold text-gray-800 truncate">{team[i].name}</h3>
               <p className="text-xs text-gray-600 flex items-center justify-center gap-1">
-                <span className="text-blue-600 font-medium">HCP: {team[i].handicap}</span>
+                <span className="text-red-600 font-medium">HCP: {team[i].handicap}</span>
                 <span className="text-gray-400">•</span>
                 <span className="truncate">{team[i].city}</span>
               </p>
@@ -53,7 +53,7 @@ export default function Teams() {
       } else if (team[i]) {
         // Golfer exists but has no valid image
         slots.push(
-          <div key={team[i].id} className="h-85 flex flex-col bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow border">
+          <div key={team[i].id} className="h-85 flex flex-col bg-white rounded-lg overflow-hidden shadow-md border border-gray-400 group">
             <div className="relative w-full h-48">
               <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-500">
                 <span className="text-sm">Image pending</span>
