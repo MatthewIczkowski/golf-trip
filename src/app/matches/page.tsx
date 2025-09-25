@@ -1,6 +1,9 @@
+'use client'
+
 import golfers from '../../data/golfers.json'
 import matches from '../../data/matches.json'
 import Image from 'next/image'
+import { useState } from 'react'
 
 interface Golfer {
   id: number
@@ -21,12 +24,15 @@ interface Match {
 }
 
 const matchesData: Match[] = matches.matches
-const day1Matches = matchesData.filter(match => match.day === 1)
 const golfersData: Golfer[] = golfers.golfers
 // Note: team filtering not needed here; we use match-provided ids to render names
 
 
 export default function Matches() {
+    const [selectedDay, setSelectedDay] = useState(1)
+    
+    // Filter matches based on selected day
+    const currentDayMatches = matchesData.filter(match => match.day === selectedDay)
     // Build a quick lookup from golfer id to golfer data
     const golfersById: Record<number, Golfer> = Object.fromEntries(
       golfersData.map((g) => [g.id, g])
@@ -67,12 +73,49 @@ export default function Matches() {
     return (
       <div className="flex flex-col items-center overflow-hidden w-full">
         <div className="h-14 flex gap-4 bg-gray-900 text-white w-full justify-center items-center">
-            <h1 className="text-xl font-bold">Day 1</h1>
+          <ul className="flex gap-4 text-xl font-bold">
+            <li>
+              <button 
+                onClick={() => setSelectedDay(1)}
+                className={`px-3 py-1 ${
+                  selectedDay === 1 
+                    ? 'text-white underline underline-offset-8 decoration-red-600 decoration-3' 
+                    : 'text-white'
+                }`}
+              >
+                Day 1
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => setSelectedDay(2)}
+                className={`px-3 py-1 ${
+                  selectedDay === 2 
+                    ? 'text-white underline underline-offset-8 decoration-red-600 decoration-3' 
+                    : 'text-white'
+                }`}
+              >
+                Day 2
+              </button>
+            </li>
+          </ul>
         </div>
 
         <div className="w-full max-w-5xl p-4">
+          {selectedDay === 1 && (
+            <div className="flex flex-col items-center justify-center mb-4">
+              <h3 className="text-xl font-semibold">Keystone Ranch Golf Course</h3>
+              <p className="text-sm mt-1">Friday, October 3rd</p>
+            </div>
+          )}
+          {selectedDay === 2 && (
+            <div className="flex flex-col items-center justify-center mb-4">
+              <h3 className="text-xl font-semibold">Breckenridge Golf Club</h3>
+              <p className="text-sm mt-1">Saturday, October 4th</p>
+            </div>
+          )}
           <div className="grid grid-cols-2 gap-4">
-            {day1Matches.map((match) => (
+            {currentDayMatches.map((match) => (
               <div key={match.id} className="col-span-2 grid grid-cols-3 rounded-lg border border-gray-200 bg-white shadow-sm">
                 {/* Team A Column */}
                 <div className="p-2 md:p-4">
