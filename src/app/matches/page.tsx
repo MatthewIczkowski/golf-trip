@@ -55,7 +55,7 @@ export default function Matches() {
               className="h-10 w-10 rounded-full object-cover"
             />
           ) : (
-            <div className="h-10 w-10 rounded-full bg-gray-200 text-gray-700 flex items-center justify-center text-sm font-semibold">
+            <div className="h-10 w-10 p-4 rounded-full bg-gray-200 text-gray-700 flex items-center justify-center text-sm font-semibold">
               {getInitials(name)}
             </div>
           )}
@@ -75,19 +75,19 @@ export default function Matches() {
             {day1Matches.map((match) => (
               <div key={match.id} className="col-span-2 grid grid-cols-3 rounded-lg border border-gray-200 bg-white shadow-sm">
                 {/* Team A Column */}
-                <div className="p-4 border-r border-gray-200">
+                <div className="p-2 md:p-4">
                   <div className="flex flex-col gap-1">
                     {match.teamA.map((id) => renderPlayer(id, false))}
                   </div>
                 </div>
 
                 {/* Time Column */}
-                <div className="p-4 border-r border-gray-200 flex items-center justify-center">
+                <div className="p-2 md:p-4 flex items-center justify-center">
                   <span className="text-sm font-medium text-gray-700">{match.time}</span>
                 </div>
 
                 {/* Team B Column */}
-                <div className="p-4">
+                <div className="p-2 md:p-4">
                   <div className="flex flex-col gap-1 items-end text-right">
                     {match.teamB.map((id) => renderPlayer(id, true))}
                   </div>
