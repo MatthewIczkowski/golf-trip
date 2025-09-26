@@ -14,7 +14,7 @@
       "name": "Blake Halva",
       "image": "/profiles/blake.jpeg",
       "handicap": 16.7,
-      "team": "B",
+      "team": "A",
       "city": "Denver, CO",
       "description": "A seasoned golfer with over 15 years of experience. Known for his powerful drives and consistent putting. Blake brings competitive spirit and strategic thinking to every round."
     },
@@ -77,7 +77,7 @@
       "name": "Will Shappee",
       "image": "/profiles/will.jpeg",
       "handicap": 23,
-      "team": "A",
+      "team": "B",
       "city": "Denver, CO",
       "description": "A dedicated golfer with a passion for the game and team camaraderie."
     },

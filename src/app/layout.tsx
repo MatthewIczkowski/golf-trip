@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Breck Golf Trip",
+  title: "Breckenridge Cup",
 };
 
 export default function RootLayout({
