@@ -25,22 +25,43 @@
       "id": 4,
       "day": 2,
       "time": "10:00 AM",
-      "teamA": [1, 7],
-      "teamB": [9, 10]
+      "teamA": [11],
+      "teamB": [12]
     },
     {
       "id": 5,
       "day": 2,
-      "time": "10:10 AM",
-      "teamA": [4, 2],
-      "teamB": [5, 12]
+      "time": "10:00 AM",
+      "teamA": [4],
+      "teamB": [5]
     },
     {
       "id": 6,
       "day": 2,
+      "time": "10:10 AM",
+      "teamA": [2],
+      "teamB": [6]
+    },
+    {
+      "id": 7,
+      "day": 2,
+      "time": "10:10 AM",
+      "teamA": [8],
+      "teamB": [3]
+    },
+    {
+      "id": 8,
+      "day": 2,
       "time": "10:20 AM",
-      "teamA": [8, 11],
-      "teamB": [3, 6]
+      "teamA": [1],
+      "teamB": [9]
+    },
+    {
+      "id": 9,
+      "day": 2,
+      "time": "10:20 AM",
+      "teamA": [7],
+      "teamB": [10]
     }
   ]
 }
