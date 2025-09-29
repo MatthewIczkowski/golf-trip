@@ -83,7 +83,7 @@ export default function Matches() {
                     : 'text-white'
                 }`}
               >
-                Day 1
+                Round 1
               </button>
             </li>
             <li>
@@ -95,7 +95,7 @@ export default function Matches() {
                     : 'text-white'
                 }`}
               >
-                Day 2
+                Round 2
               </button>
             </li>
           </ul>
@@ -104,13 +104,13 @@ export default function Matches() {
         <div className="w-full max-w-5xl p-4">
           {selectedDay === 1 && (
             <div className="flex flex-col items-center justify-center mb-4">
-              <h3 className="text-xl font-semibold">Keystone Ranch Golf Course</h3>
+              <h3 className="text-xl font-semibold">Breckenridge Golf Club</h3>
               <p className="text-sm mt-1">Friday, October 3rd</p>
             </div>
           )}
           {selectedDay === 2 && (
             <div className="flex flex-col items-center justify-center mb-4">
-              <h3 className="text-xl font-semibold">Breckenridge Golf Club</h3>
+              <h3 className="text-xl font-semibold">Keystone Ranch Golf Course</h3>
               <p className="text-sm mt-1">Saturday, October 4th</p>
             </div>
           )}
