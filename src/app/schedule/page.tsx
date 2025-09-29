@@ -45,49 +45,12 @@ export default function Schedule() {
             </div>
           </div>
 
-          {/* Day 2 - Keystone Ranch */}
+          {/* Round 1 - Breckenridge */}
           <div className="overflow-hidden bg-white">
             <div className="p-6">
-              <h2 className="text-2xl italic underline font-bold mb-1">Day 1</h2>
-              <h3 className="text-xl font-semibold">Keystone Ranch Golf Course</h3>
-              <p className="text-sm mt-1">Friday, October 3rd</p>
-            </div>
-            
-            <div className="p-6">
-              <div className="h-48 flex items-center justify-center mb-4">
-                <Image src={keystoneRanch} alt="Keystone Ranch Golf Course" width={400} height={300} className="w-full h-full rounded-lg object-cover" />
-              </div>
-              
-              <div className="space-y-4">
-                <div className="md:h-40">
-                  <h4 className="text-lg font-semibold mb-2">Course Details</h4>
-                  <p className="text-sm leading-relaxed">
-                    Keystone Ranch offers a unique mountain golf experience with dramatic 
-                    elevation changes and stunning Rocky Mountain scenery. This final round 
-                    will determine our champion and provide unforgettable memories.
-                  </p>
-                </div>
-                
-                <div className="bg-white p-3 rounded-lg">
-                  <h5 className="font-semibold text-blue-900 mb-2 text-sm">Schedule</h5>
-                  <ul className="text-blue-900 space-y-1 text-sm">
-                    <li>• 10:30 AM - Check-in & Warm-up</li>
-                    <li>• 11:23 AM - 1st Tee time</li>
-                    <li>• 11:32 AM - 2nd Tee time</li>
-                    <li>• 11:50 AM - 3rd Tee time</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-
-        {/* Day 3 - Breckenridge Golf Club */}
-        <div className="overflow-hidden bg-white">
-            <div className="p-6">
-              <h2 className="text-2xl italic underline font-bold mb-1">Day 2</h2>
+              <h2 className="text-2xl italic underline font-bold mb-1">Round 1</h2>
               <h3 className="text-xl font-semibold">Breckenridge Golf Club</h3>
-              <p className="text-sm mt-1">Saturday, October 4th</p>
+              <p className="text-sm mt-1">Friday, October 3rd</p>
             </div>
             
             <div className="p-6">
@@ -112,6 +75,41 @@ export default function Schedule() {
                     <li>• 10:00 AM - 1st Tee time</li>
                     <li>• 10:10 AM - 2nd Tee time</li>
                     <li>• 10:20 AM - 3rd Tee time</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Round 2 - Keystone Ranch */}
+          <div className="overflow-hidden bg-white">
+            <div className="p-6">
+              <h2 className="text-2xl italic underline font-bold mb-1">Round 2</h2>
+              <h3 className="text-xl font-semibold">Keystone Ranch Golf Course</h3>
+              <p className="text-sm mt-1">Saturday, October 4th</p>
+            </div>
+            
+            <div className="p-6">
+              <div className="h-48 flex items-center justify-center mb-4">
+                <Image src={keystoneRanch} alt="Keystone Ranch Golf Course" width={400} height={300} className="w-full h-full rounded-lg object-cover" />
+              </div>
+              
+              <div className="space-y-4">
+                <div className="md:h-40">
+                  <h4 className="text-lg font-semibold mb-2">Course Details</h4>
+                  <p className="text-sm leading-relaxed">
+                    Keystone Ranch offers a unique mountain golf experience with dramatic 
+                    elevation changes and stunning Rocky Mountain scenery. This final round 
+                    will determine our champion and provide unforgettable memories.
+                  </p>
+                </div>
+                
+                <div className="bg-white p-3 rounded-lg">
+                  <h5 className="font-semibold text-blue-900 mb-2 text-sm">Schedule</h5>
+                  <ul className="text-blue-900 space-y-1 text-sm">
+                    <li>• 10:30 AM - Check-in & Warm-up</li>
+                    <li>• 11:23 AM - 1st Tee time</li>
+                    <li>• 11:32 AM - 2nd Tee time</li>
+                    <li>• 11:50 AM - 3rd Tee time</li>
                   </ul>
                 </div>
               </div>
