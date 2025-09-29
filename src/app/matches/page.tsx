@@ -86,7 +86,7 @@ export default function Matches() {
                 Round 1
               </button>
             </li>
-            <li>
+            {/* <li>
               <button 
                 onClick={() => setSelectedDay(2)}
                 className={`px-3 py-1 ${
@@ -97,7 +97,7 @@ export default function Matches() {
               >
                 Round 2
               </button>
-            </li>
+            </li> */}
           </ul>
         </div>
 
