@@ -2,7 +2,7 @@
 
 import golfers from '../../data/golfers.json'
 import matches from '../../data/matches.json'
-import Image from 'next/image'
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
 import { useState } from 'react'
 
 interface Golfer {
@@ -52,19 +52,10 @@ export default function Matches() {
       const img = golfer?.image || ''
       return (
         <div key={id} className={`flex items-center gap-2 ${mirrored ? 'flex-row-reverse' : ''}`}>
-          {img ? (
-            <Image
-              src={img}
-              alt={name}
-              width={40}
-              height={40}
-              className="h-10 w-10 rounded-full object-cover"
-            />
-          ) : (
-            <div className="h-10 w-10 p-4 rounded-full bg-gray-200 text-gray-700 flex items-center justify-center text-sm font-semibold">
-              {getInitials(name)}
-            </div>
-          )}
+          <Avatar>
+            <AvatarImage src={img} alt={name} />
+            <AvatarFallback>{getInitials(name)}</AvatarFallback>
+          </Avatar>
           <span className="text-sm md:text-base text-gray-900">{name}</span>
         </div>
       )
