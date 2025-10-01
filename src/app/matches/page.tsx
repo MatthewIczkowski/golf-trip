@@ -21,12 +21,11 @@ interface Match {
   time: string
   teamA: number[]
   teamB: number[]
+  results: number[]
 }
 
 const matchesData: Match[] = matches.matches
 const golfersData: Golfer[] = golfers.golfers
-// Note: team filtering not needed here; we use match-provided ids to render names
-
 
 export default function Matches() {
     const [selectedDay, setSelectedDay] = useState(1)
@@ -116,9 +115,17 @@ export default function Matches() {
                 </div>
 
                 {/* Time Column */}
-                <div className="p-2 md:p-4 flex items-center justify-center">
-                  <span className="text-sm font-medium text-gray-700">{match.time}</span>
+                {match.results[0] === 0 ? (
+                  <div className="p-2 md:p-4 flex items-center justify-center">
+                    <span className="text-md font-medium text-gray-700">{match.time}</span>
+                  </div>
+                ): (<div className={`text-white text-md font-medium p-2 md:p-4 flex items-center justify-center ${match.results[0] === 1 ? 'bg-red-700' : 'bg-blue-700'}`}>
+                  {match.results[1] === 1 ?(
+                    <span>1 UP</span>
+                  ): (<span>{match.results[1]} & {match.results[2]}</span>)}
+                  
                 </div>
+                )}
 
                 {/* Team B Column */}
                 <div className="p-2 md:p-4">
