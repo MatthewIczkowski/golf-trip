@@ -28,8 +28,8 @@ export default function Teams() {
     for (let i = 0; i < teamSize; i++) {
       if (team[i] && team[i].image && team[i].image.trim() !== '') {
         slots.push(
-          <div key={team[i].id} className="h-85 flex flex-col bg-white rounded-lg overflow-hidden shadow-md border border-gray-400 group">
-            <div className="relative w-full h-48">
+          <div key={team[i].id} className="h-75 flex flex-col bg-white rounded-lg overflow-hidden shadow-md border border-gray-400 group">
+            <div className="relative w-full h-40">
               <Image
                 src={team[i].image}
                 alt={team[i].name}
@@ -53,8 +53,8 @@ export default function Teams() {
       } else if (team[i]) {
         // Golfer exists but has no valid image
         slots.push(
-          <div key={team[i].id} className="h-85 flex flex-col bg-white rounded-lg overflow-hidden shadow-md border border-gray-400 group">
-            <div className="relative w-full h-48">
+          <div key={team[i].id} className="h-75 flex flex-col bg-white rounded-lg overflow-hidden shadow-md border border-gray-400 group">
+            <div className="relative w-full h-40">
               <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-500">
                 <span className="text-sm">Image pending</span>
               </div>
@@ -97,7 +97,7 @@ export default function Teams() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Team A */}
           <div>
-            <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">Team A</h2>
+            <h2 className="bg-red-700 text-white text-2xl font-bold text-center rounded-t-lg mb-2 p-2">United States</h2>
             <div className="grid grid-cols-2 gap-2">
               {createTeamSlots(teamA)}
             </div>
@@ -105,7 +105,7 @@ export default function Teams() {
           
           {/* Team B */}
           <div>
-            <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">Team B</h2>
+            <h2 className="bg-blue-700 text-white text-2xl font-bold text-center rounded-t-lg mb-2 p-2">Europe</h2>
             <div className="grid grid-cols-2 gap-2">
               {createTeamSlots(teamB)}
             </div>
