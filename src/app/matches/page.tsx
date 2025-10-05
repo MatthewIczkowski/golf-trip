@@ -28,7 +28,7 @@ const matchesData: Match[] = matches.matches
 const golfersData: Golfer[] = golfers.golfers
 
 export default function Matches() {
-    const [selectedDay, setSelectedDay] = useState(1)
+    const [selectedDay, setSelectedDay] = useState(2)
     
     // Filter matches based on selected day
     const currentDayMatches = matchesData.filter(match => match.day === selectedDay)
@@ -76,7 +76,7 @@ export default function Matches() {
                 Round 1
               </button>
             </li>
-            {/* <li>
+            <li>
               <button 
                 onClick={() => setSelectedDay(2)}
                 className={`px-3 py-1 ${
@@ -87,7 +87,7 @@ export default function Matches() {
               >
                 Round 2
               </button>
-            </li> */}
+            </li>
           </ul>
         </div>
 
@@ -115,7 +115,7 @@ export default function Matches() {
                 </div>
 
                 {/* Time Column */}
-                {match.results[0] === 0 ? (
+                {/* {match.results[0] === 0 ? (
                   <div className="p-2 md:p-4 flex items-center justify-center">
                     <span className="text-md font-medium text-gray-700">{match.time}</span>
                   </div>
@@ -125,6 +125,34 @@ export default function Matches() {
                   ): (<span>{match.results[1]} & {match.results[2]}</span>)}
                   
                 </div>
+                )} */}
+
+                {match.results[0] === 0 && (
+                  <div className="p-2 md:p-4 flex items-center justify-center">
+                    <span className="text-md font-medium text-gray-700">{match.time}</span>
+                  </div>
+                )}
+
+                {match.results[0] === 1 && (
+                  <div className="text-white text-md font-medium p-2 md:p-4 flex items-center justify-center bg-red-700">
+                  {match.results[1] === 1 ?(
+                    <span>1 UP</span>
+                  ): (<span>{match.results[1]} & {match.results[2]}</span>)}
+                  </div>
+                )}
+
+                {match.results[0] === 2 && (
+                  <div className="text-white text-md font-medium p-2 md:p-4 flex items-center justify-center bg-blue-700">
+                  {match.results[1] === 1 ?(
+                    <span>1 UP</span>
+                  ): (<span>{match.results[1]} & {match.results[2]}</span>)}
+                  </div>
+                )}
+
+                {match.results[0] === 3 && (
+                  <div className="text-white text-md font-medium p-2 md:p-4 flex items-center justify-center bg-gray-700">
+                    <span>AS</span>
+                  </div>
                 )}
 
                 {/* Team B Column */}
