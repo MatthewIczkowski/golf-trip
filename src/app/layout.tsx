@@ -17,6 +17,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Breckenridge Cup",
+  icons: {
+    icon: '/apple-touch-icon.svg',
+    apple: '/apple-touch-icon.svg',
+  },
 };
 
 export default function RootLayout({
